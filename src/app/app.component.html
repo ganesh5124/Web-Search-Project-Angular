@@ -1,2 +1,4 @@
-<searchBar></searchBar>
-<pageList></pageList>
+<div class="container">
+    <searchBar (submitted)="onTermSearch($any($event))"></searchBar>
+<pageList [pages]="pages"></pageList>
+</div>

@@ -1,1 +1,27 @@
-<p>search-bar works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible"
+			content="IE=edge">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+
+	<body>
+		<div class="box">
+			<form (submit)="onFormSubmit($event)">
+				<input (input)="onChangeText($event)"
+					type="text"
+					class="input"
+					placeholder="Enter any search word">
+				<!-- <input (input)="term = $any($event).target.value"/>  we can also write it like this -->
+				<!-- <p *ngIf="term.length>0">Enter word is {{submitted}}</p> -->
+
+			</form>
+		</div>
+	</body>
+
+</html>
