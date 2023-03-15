@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-
+import { tap } from 'rxjs';
 @Component({
   selector: 'searchBar',
   templateUrl: './search-bar.component.html',
