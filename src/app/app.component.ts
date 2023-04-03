@@ -14,10 +14,8 @@ export class AppComponent {
   ){}
 
   onTermSearch(value:string){
-    console.log(this.wikipedia);
     const results = this.wikipedia.onSearchValue(value).subscribe((pages:any)=>{
       this.pages= pages
     });
-    console.log(results);
   }
 }
